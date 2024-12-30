@@ -1,13 +1,21 @@
-# WebMonitor
+**WebMonitor-Hub** is a full-stack MEAN application that allows users to view the real-time status of various company websites' production environments. While anyone can access the platform and see the current status, only a verified admin from a company—whose identity is confirmed through their corporate email—can update the status of their company's website. The app ensures secure admin access through JWT authentication and email verification.
 
-WebMonitor is a full-stack MEAN (MongoDB, Express, Angular, Node.js) application designed to allow companies to monitor and update the status of their website's production environment. The application ensures that only authorized company admins can post and update the status of their company's website, with a verified company email and JWT (JSON Web Token) authentication.
+---
+
+### Updated `README.md`
+
+---
+
+# WebMonitor-Hub
+
+WebMonitor-Hub is a full-stack MEAN (MongoDB, Express, Angular, Node.js) application designed to allow users to view the current status of different company websites' production environments. Anyone can visit the platform and check the status of various websites, but only verified admins from each company—authenticated through their corporate email—can update their respective company's website status. The app ensures secure access to update website status through JWT (JSON Web Token) authentication and email verification.
 
 ## Features
 
-- **Company Website Status**: Admins of a company can post and update the status of their website (e.g., running, down, maintenance).
-- **Admin Authentication**: Only users with admin roles, authenticated with JWT, can modify the website status.
-- **Email Verification**: Admins must verify their company email before being granted access to update the website status.
-- **User Authentication**: Users can view the status of various websites but cannot modify the status unless they are admins.
+- **Website Status Monitoring**: Users can view the real-time status of various company websites (e.g., running, down, maintenance).
+- **Admin Access for Updates**: Only company admins, verified through their corporate email, can update the status of their company's website.
+- **Email Verification**: Admin users must have a verified company email before they are granted permission to update their company's website status.
+- **Secure Authentication**: Admin users authenticate with JWT tokens to ensure secure access.
 
 ## Tech Stack
 
@@ -31,8 +39,8 @@ Make sure you have the following installed on your machine:
 
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/your-username/webmonitor.git
-    cd webmonitor
+    git clone https://github.com/your-username/WebMonitor-Hub.git
+    cd WebMonitor-Hub
     ```
 
 2. **Install dependencies for the backend**:
@@ -79,3 +87,4 @@ Make sure you have the following installed on your machine:
 ## Contributing
 
 If you wish to contribute to the project, feel free to fork the repository and submit a pull request. Before making any contributions, please ensure you follow the standard development practices and write tests where necessary.
+
