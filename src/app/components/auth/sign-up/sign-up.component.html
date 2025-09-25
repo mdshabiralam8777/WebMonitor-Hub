@@ -1,0 +1,17 @@
+<h2>Sign Up</h2>
+<form (submit)="onSignUp()">
+  <label for="username">Username:</label>
+  <input type="text" id="username" [(ngModel)]="signUpData.username" name="username" />
+  <label for="email">Email:</label>
+  <input type="email" id="email" [(ngModel)]="signUpData.email" name="email" />
+  <label for="password">Password:</label>
+  <input type="password" id="password" [(ngModel)]="signUpData.password" name="password" />
+  <button type="submit">Sign Up</button>
+</form>
+
+<div class="rout-signup">
+  <h2>Already have an account?</h2>
+  <button class="signup-btn">
+    <a [routerLink]="['/login']">Login</a>
+  </button>
+</div>
